@@ -12,35 +12,35 @@
         <title>Ingreso de Datos</title>
     </head>
     <body>
-        <h1>Ingreso de Datos</h1>
+        <p style="color:turquoise;">Ingreso de datos</p>
         <form action="formulario.jsp" method="post">
-        <table bgcolor ="skyblue" border="1" cellpadding="0" cellspacing="0" width="40%">
+        <table bgcolor ="NAVY" border="1" cellpadding="0" cellspacing="0" width="40%">
        <tr>
-       <td width="70%" bgcolor="skyblue">Nombre: </td>
+       <td width="70%" bgcolor="NAVY" style="color:turquoise;">Nombre: </td>
        <td width="50%"><input type="text" size="53" name="nombre"></td>
        </tr>
        <tr>
-       <td width="70%" bgcolor="skyblue">Apellido: </td>
+       <td width="70%" bgcolor="NAVY" style="color:turquoise;">Apellido: </td>
        <td width="50%"><input type="text" size="53" name="apellido"></td>
        </tr>
        <tr>
-       <td width="70%">Edad: </td>
+       <td width="70%" style="color:turquoise;">Edad: </td>
        <td width="50%"><input type="text" size="53" name="edad"></td>
        </tr>
        <tr>
-       <td width="70%">Telefono: </td>
+       <td width="70%" style="color:turquoise;">Telefono: </td>
        <td width="50%"><input type="text" size="53" name="telefono"></td>
      </tr>
      <tr>
-       <td width="70%">Dirección: </td>
+       <td width="70%" style="color:turquoise;">Dirección: </td>
        <td width="50%"><input type="text" size="53" name="direccion"></td>
      </tr>
      <tr>
-       <td width="70%">Nombre de Usuario: </td>
+       <td width="70%" style="color:turquoise;">Nombre de Usuario: </td>
        <td width="50%"><input type="text" size="53" name="usuario"></td>
      </tr>
      <tr>
-       <td width="70%">Contraseña: </td>
+       <td width="70%" style="color:turquoise;">Contraseña: </td>
        <td width="50%"><input type="text" size="53" name="contrasena"></td>
      </tr>
    </table>
@@ -48,7 +48,7 @@
     <br>
     Deportes:
     <select name="deportes">
-      <option value="Fútbol">Fútbol
+      <option value="Futbol">Fútbol
       <option value="Rugby">Rugby
       <option value="Natación">Natación
       <option value="Volley">Volley
@@ -59,31 +59,22 @@
     <br></br>
     Habilidades:
     <br/>
-    <input type="Radio" name="cantar" value= "Cantar"checked>Cantar
+   
+    <input type="Radio" name="cantar" value= "cantar">Cantar
     <br/>
-    <input type="Radio" name= "bailar"value="Bailar">Bailar
+    <input type="Radio" name= "bailar"value="1">Bailar
     <br/>
-    <input type="Radio" name= "pintar"value="Pintar">Pintar
+    <input type="Radio" name= "pintar"value="2">Pintar
     <br/>
-    <input type="Radio" name= "tocar"value="Tocar instrumentos Musicales">Tocar instrumentos Musicales
+    <input type="Radio" name= "tocar"value="3">Tocar instrumentos Musicales
     <br/>
  
     <p><input type="submit" value="Enviar"></p>
 </form>
         <a href="index.jsp">
-                Volver a menú principal
+                Cancelar y limpiar
             </a>
-        <%
-            String nombre = request.getParameter("nombre");
-            String apellido = request.getParameter("apellido");
-            String edad = request.getParameter("edad");
-            String telefono = request.getParameter("telefono");
-            String direccion = request.getParameter("direccion");
-            String usuario = request.getParameter("usuario");
-            String contrasena = request.getParameter("contrasena");
-            String deporte = request.getParameter("deporte");
-            String habilidad = request.getParameter("habilidad");
-            %>
+        
         
     </body>
 </html>
